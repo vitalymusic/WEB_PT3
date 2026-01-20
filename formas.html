@@ -18,20 +18,20 @@
 
             <label>
                 Jūsu vārds:
-                <input type="text" name="vards" id="" placeholder="Piem. Jānis">
+                <input type="text" name="vards" id="" placeholder="Piem. Jānis" required minlength="3" maxlength="10">
             </label>
 
             <label>
                 Jūsu uzvārds
-                <input type="text" name="uzvards" id="">
+                <input type="text" name="uzvards" id="" required >
             </label>
             <label>
                 Jūsu Epasts
-                <input type="email" name="epasts" id="">
+                <input type="email" name="epasts" id="" required>
             </label>
             <label>
                 Jūsu tālrunis
-                <input type="tel" name="epasts" id="" placeholder="piem.: +37122222222">
+                <input type="tel" name="epasts" id="" placeholder="piem.: +37122222222" pattern="/(\+371)([0-9]{8})/gm">
             </label>
             <label>
                 Jūsu dzimšanas datums
@@ -39,19 +39,19 @@
             </label>
             <label>
                 Profila bilde
-                <input type="file" name="photo" id="">
+                <input type="file" multiple name="photo[]" id="" accept=".jpg,.png" >
             </label>
         </fieldset>
 
-        <fieldset>
+        <fieldset >
             <legend>Parole</legend>
             <label>
                 Jūsu parole:
-                <input type="password" name="password" id="">
+                <input type="password" name="password" id="" required pattern="/^((?=\S*?[A-Z])(?=\S*?[a-z])(?=\S*?[0-9]).{6,})\S$/gm">
             </label>
             <label>
                 Atkārtot paroli:
-                <input type="password" name="password_repeat" id="">
+                <input type="password" name="password_repeat" id="" required>
             </label>
 
         </fieldset>
@@ -77,11 +77,11 @@
             </label>
 
             <div>
-                <select name="car" id="">
+                <select name="car[]" id="" multiple>
                     <option value="">---</option>
                     <option value="Mercedes">Mercedes</option>
                     <option value="BMW">BMW</option>
-                    <option value="FORD">FORD</option>
+                    <option value="FORD" selected>FORD</option>
                     <option value="Toyota">Toyota</option>
                 </select>
 
@@ -90,10 +90,13 @@
                 <label for="bio">Nedaudz par sevi:</label>
                 <textarea name="bio" id="bio"></textarea>
             </div>
+            <input type="number" name="number" id="" min="0" max="100" step="5">
 
 
 
         </fieldset>
+
+        <input type="hidden" name="auth-key" value="234c234c234c23">
 
         <button type="submit">Reģistrēties</button>
         <button type="reset">Notīrīt</button>
