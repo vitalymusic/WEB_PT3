@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Formas</h1>
+
+    <form action="">
+        <fieldset>
+            <legend>Lietotāja dati:</legend>
+
+            <label>
+                Jūsu vārds:
+                <input type="text" name="vards" id="" placeholder="Piem. Jānis">
+            </label>
+
+            <label>
+                Jūsu uzvārds
+                <input type="text" name="uzvards" id="">
+            </label>
+            <label>
+                Jūsu Epasts
+                <input type="email" name="epasts" id="">
+            </label>
+            <label>
+                Jūsu tālrunis
+                <input type="tel" name="epasts" id="" placeholder="piem.: +37122222222">
+            </label>
+            <label>
+                Jūsu dzimšanas datums
+                <input type="date" name="dz_datums" id="">
+            </label>
+            <label>
+                Profila bilde
+                <input type="file" name="photo" id="">
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Parole</legend>
+            <label>
+                Jūsu parole:
+                <input type="password" name="password" id="">
+            </label>
+            <label>
+                Atkārtot paroli:
+                <input type="password" name="password_repeat" id="">
+            </label>
+
+        </fieldset>
+
+        <fieldset>
+            <label>
+                <input type="checkbox" name="agree" id="" value="true">
+                Piekrītu <a href="#">lietošanas noteikumiem</a>
+            </label>
+
+            <h5>Cik daudz laika jūs pavadat pie datora?</h5>
+            <label>
+                <input type="radio" name="test" id="" value="mazāk par vienu stundu">
+                mazāk par vienu stundu
+            </label>
+            <label>
+                <input type="radio" name="test" id="" value="vairāk par 2 stundām, bet mazāk par 5">
+                vairāk par 2 stundām, bet mazāk par 5
+            </label>
+            <label>
+                <input type="radio" name="test" id="" value="vairāk par 5 stundām">
+                vairāk par 5 stundām
+            </label>
+
+            <div>
+                <select name="car" id="">
+                    <option value="">---</option>
+                    <option value="Mercedes">Mercedes</option>
+                    <option value="BMW">BMW</option>
+                    <option value="FORD">FORD</option>
+                    <option value="Toyota">Toyota</option>
+                </select>
+
+            </div>
+            <div>
+                <label for="bio">Nedaudz par sevi:</label>
+                <textarea name="bio" id="bio"></textarea>
+            </div>
+
+
+
+        </fieldset>
+
+        <button type="submit">Reģistrēties</button>
+        <button type="reset">Notīrīt</button>
+    </form>
+
+
+</body>
+
+</html>
