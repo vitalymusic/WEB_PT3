@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,49 +12,114 @@
     <style>
         /* Šeit ir iekšējāis  CSS kods */
 
-        body{
+        body {
             background-color: rgb(255, 209, 3) !important;
-            color:#171717;
+            color: #171717;
         }
+
         /* selektori */
-        header{
+        header {
             background-color: #171717;
             height: 50px;
         }
 
-        section{
+        section {
             height: 500px;
-            margin:50px;
+            margin: 50px;
             border: 2px solid red;
+            border-style: groove;
         }
 
-        section.sec1{
-             background-color: #20e812;
+        section.sec1 {
+            background-color: #20e812;
         }
-        section.sec2{
-             background-color: #0d74e3;
-        }
-        section.sec3{
-             background-color: #e806d2;
-        }
-        
 
-         section#sec1{
+        section.sec2 {
+            background-color: #0d74e3;
+        }
+
+        section.sec3 {
+            background-color: #e806d2;
+        }
+
+
+        /* section#sec1{
             
+        } */
+
+        .navigacija a {
+            color: white;
+        }
+
+        .navigacija {
+            border-bottom: 5px solid red;
+            background-color: #171717;
+
+
+
+            /* Arējās atkāpes */
+
+            margin:50px;
+            margin: 50px 30px;
+            margin: 50px 30px 20px 10px;
+            margin-left: 50px;
+
+
+            /* Iekšējas atkāpes */
+
+            padding: 20px;
+            padding: 10px 30px;
+            padding: 10px 30px 10px 30px ;
+            padding-right: 50px;
+
+
+            a {
+                color: #05ffb0;
+                font-size: 1.2rem;
+            }
+        }
+
+
+        section{
+            max-width:700px;
+            /* width:700px; */
+            margin: 50px auto;
+            padding: 20px;
+            /* Novieto elementu centrā */
+            box-sizing: border-box;
+            /* kā mērīt elementa izmērus  1. Pēs satura (cotent) 2. Pēc apmales (border)*/
+            /* box-shadow: 0px 0px 10px black; */
+            box-shadow: 5px 5px 16px 0px #ff00006e;
+            -webkit-border-radius: 10px 10px 10px 10px;
+            border-radius: 10px 10px 10px 10px;
+
+        }
+
+
+
+        /* Flexbox */
+
+        nav{
+            height: 100px;
+            display: flex;
+            justify-content:flex-end ;
+            gap:20px;
+            align-items: center;
+            /* flex-direction: column; */
         }
 
     </style>
 </head>
+
 <body style="background-color: aquamarine; ">
     <!-- Semantiskie tegi ir daļa no SEO optimizācijas -->
     <header>
         <!-- Lapas galvene -->
     </header>
-    <nav >
+    <nav class="navigacija">
         <a href="#sec1">Sekcija 1</a>
         <a href="#sec2">Sekcija 2</a>
         <a href="#sec3">Sekcija 3</a>
-       
         <!-- navigācija -->
     </nav>
     <main>
@@ -64,15 +130,15 @@
             <article>
 
             </article>
+            <a href="">Hipersaite</a>
 
-
-        </section >
+        </section>
         <section class="sec2" id="sec2">
             <!-- Satura sekcija -->
-        </section >
+        </section>
         <section class="sec3" id="sec3">
             <!-- Satura sekcija -->
-        </section >
+        </section>
 
     </main>
     <aside>
@@ -89,4 +155,5 @@
 
 
 </body>
+
 </html>
