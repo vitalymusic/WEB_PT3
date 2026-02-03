@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            width: 300px;
+            height: 200px;
+            margin: 50px;
+            border: 2px solid red;
+
+        }
+
+
+        .poz1{
+            position: static;
+            background-color: aqua;
+        }
+
+        .poz2{
+            position: relative;
+            background-color: rgb(239, 197, 27);
+            left:50px;
+            top:-100px;
+            z-index: -1;
+        }
+        .poz3{
+            position: absolute;
+            background-color: rgb(18, 224, 7);
+            top:0px;
+            right:0px;
+            z-index:10;
+        }
+
+        .poz4{
+            position: fixed;
+            bottom:0px;
+            width: 100%;
+            background-color: rgb(255, 39, 6);
+            margin: 0;
+            height: 50px;
+        }
+
+        .poz5{
+            position: sticky;
+            background-color: cornsilk;
+            width: 100%;
+            height: 100px;
+            top:0px;
+            z-index: 5000;
+            margin: 0;
+
+        }
+
+
+        body{
+            height:300vh;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="poz5">Piektā</div>
+
+    <div class="poz1">Pirmā </div>
+    <div class="poz2">Otrā</div>
+    <div class="poz3">Trešā</div>
+    <div class="poz4">Ceturtā</div>
+    
+
+
+
+
+     <div class="poz1">Pirmā </div>
+     <div class="poz1">Pirmā </div>
+     <div class="poz1">Pirmā </div>
+     <div class="poz1">Pirmā </div>
+     <div class="poz1">Pirmā </div>
+</body>
+</html>
