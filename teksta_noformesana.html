@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&family=Italianno&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+        :root{
+            --main-text-color:#333;
+            --button-background1:#ff3838;
+            
+
+        }
+        *{
+            padding:0px;
+            margin:0px;
+        }
+
+        html{
+            scroll-behavior: smooth;
+            font-family: "Roboto", sans-serif;
+            font-size: 18px;
+            line-height: 1;
+
+
+        }
+
+        h1{
+             font-size: 4.5rem;  
+             color:rgb(255, 0, 0);
+             /* color:var(--main-text-color); */
+             text-align: center;
+             text-decoration: underline dotted #9f9f9f; 
+             text-transform: uppercase;
+             text-shadow: 0px 0px 5px black;
+             font-weight: 900;
+             font-style: oblique;
+            font-family: "Genos", sans-serif;
+        }
+        h2{
+            font-size: 2.5rem;  
+            font-family: "Italianno", cursive;
+            font-weight: 400;
+        }
+
+
+
+        /* elementu transformācija */
+        body{
+            perspective: 300px;
+
+        }
+
+        h1{
+            transform: scale(0.7) rotate(-10deg) skew(-50deg) translate(-20px,30px);
+            /* background-color: #ff3838; */
+            transform: rotateY(30deg);
+            filter:blur(0px) grayscale(0) saturate(1) hue-rotate(45deg);
+        }
+
+
+
+        /* Hipersaišu noformēšana */
+
+        a{
+            border: 1px solid lightblue;
+            padding: 5px;
+            display: inline-block;
+            margin: 30px;
+            text-decoration: none;
+            color:#333;
+        }
+
+        a:hover{
+            border: 1px solid rgb(114, 146, 156);
+            box-shadow: 0px 0px 5px lightblue;
+            transition: all 0.5s;
+
+        }
+
+
+
+        /* Fona bildes */
+
+        body{
+            height: 100vh;
+            background-image: linear-gradient(rgba(0, 0, 255, 0.46),rgba(0, 0, 139, 0.473));
+            background: linear-gradient(45deg, #624e12 0%, #2ce9fe 60%, #ded012 100%); 
+            background: url('./coolbackgrounds-fractalize-cool_backgrounds.png');
+            background-size: cover;
+            background-size: 120%;
+            background-position: -10px 0px;
+            background-repeat: no-repeat;
+
+             perspective: none;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Pirmais</h1>
+    <h2>Otrais</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, deserunt animi! Sint, minima ratione fugit distinctio assumenda iure atque repellat cumque corporis quaerat, eius voluptatum maiores quo laboriosam, unde voluptate!</p>
+
+    <a href="#">te bus saite</a>
+
+
+
+</body>
+</html>
