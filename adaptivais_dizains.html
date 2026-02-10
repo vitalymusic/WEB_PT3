@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,35 +8,79 @@
 
     <style>
         /* Widescreen */
-        body{
-            background-color: aqua;
 
+        @media screen and (min-width:769px) {
+
+
+            body {
+                background-color: aqua;
+
+            }
+
+            h1 {
+                font-size: 5rem;
+            }
+
+            .container {
+                border: 5px solid red;
+                padding: 20px;
+                max-width: 800px;
+                margin: 20px auto;
+            }
         }
 
-        h1{
-            font-size: 5rem;
-        }
+        @media screen and (min-width:376px) and (max-width:768px) {
 
-
-        @media screen and (max-width:768px) {
             /* Tablet  */
-             body{
-            background-color: rgb(0, 255, 51);
+            body {
+                background-color: rgb(0, 255, 51);
 
-             }   
+            }
 
-              h1{
+            h1 {
                 font-size: 3rem;
-             }
+            }
+
+            .container {
+                display: none;
+            }
+
+
+
         }
+
+        @media screen and (max-width:375px) {
+            body {
+                background-color: rgb(64, 0, 255);
+
+            }
+
+            h1 {
+                font-size: 1rem;
+            }
+
+            .container {
+                display: block;
+            }
+        }
+
+
+
+        /* Mobile first */
 
         
     </style>
 </head>
+
 <body>
-    
+
     <h1>Adaptīvais dizains</h1>
+
+    <div class="container">
+        div elements
+    </div>
 
 
 </body>
+
 </html>
