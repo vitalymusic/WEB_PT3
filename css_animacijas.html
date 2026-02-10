@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            font-size: 5rem;
+            text-align: center;
+            max-width: 80%;
+            margin: auto;
+        }
+
+        .container {
+            border: 5px solid red;
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+
+        h1:hover{
+            color: rgb(245, 217, 5);
+            transform: scale(1.2) rotate(-5deg);
+            transition: color 2s , transform .3s cubic-bezier(0,.19,.67,1.36);
+        }
+         h1:active{
+            color: rgb(255, 0, 0);
+            transform: scale(1.2);
+            transition: all .1s cubic-bezier(0,.19,.67,1.36);
+        }
+
+
+        .loader{
+            display: flex;
+            justify-content: center;
+            gap:20px;
+
+            .circle{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background-color: aqua;
+
+            }
+            .circle:nth-child(1){
+                     background-color: red;
+                     animation: aplis1 2s infinite 0s;
+            }
+            .circle:nth-child(2){
+                 background-color: green;
+                  animation: aplis1 2s infinite .5s;
+            }
+            .circle:nth-child(3){
+                 background-color: blue;
+                  animation: aplis1 2s infinite 1s;
+            }
+
+        }
+
+
+        @keyframes aplis1{
+            0%{
+                transform: translate(0,0) scale(0.7);
+                 background-color: red;
+
+            }
+            25%{
+                transform: translate(0,10px) scale(1.1);
+                  background-color: green;
+            }
+
+            50%{
+                 transform: translate(0,0px) scale(1.2);
+                 background-color: blue;
+
+            }
+
+            75%{
+                 transform: translate(0,-10px) scale(1.);
+                 background-color: rgb(217, 245, 6);
+
+            }
+
+
+            100%{
+                 transform: translate(0,0) scale(0.7);   
+                   background-color: red;
+            }
+        } 
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Adaptīvais dizains</h1>
+    <div class="container">
+        div elements
+    </div>
+
+    <div class="loader">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+
+
+</body>
+
+</html>
